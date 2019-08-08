@@ -1,7 +1,7 @@
 {
     "type": "sqlite",
-    "name": "file",
-    "database": "test",
-    "entities": ["src/**/*.entity{.ts,.js}"],
-    "synchronize": true
-  }
+    "database": "test.sqlite",
+    "entities": [
+        "src/**/*.entity{.ts,.js}"
+    ]
+}

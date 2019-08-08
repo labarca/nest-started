@@ -1,12 +1,16 @@
 import { Controller, Get } from '@nestjs/common';
 import { PhotoService } from './photo.service';
+import { Crud } from '@nestjsx/crud';
+import { Photo } from './photo.entity';
 
-@Controller()
+@Crud({
+    model: {
+        type: Photo,
+    },
+})
+
+@Controller('photos')
 export class PhotoController {
-  constructor(private readonly photoService: PhotoService) {}
+  constructor(public service: PhotoService) {}
 
-  @Get('photo')
-  getPhoto(): Promise<any> {
-    return this.photoService.findAll();
-  }
 }

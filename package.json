@@ -33,7 +33,7 @@
     "rxjs": "^6.3.3",
     "sqlite3": "^5.0.0",
     "swagger-ui-express": "^4.0.7",
-    "typeorm": "^0.2.18"
+    "typeorm": "^0.3.0"
   },
   "devDependencies": {
     "@nestjs/testing": "7.0.0",
